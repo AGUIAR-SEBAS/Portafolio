@@ -1,5 +1,5 @@
 import React from 'react'
-import { RiFireLine, RiCupLine, RiGroupLine, RiTrophyLine } from 'react-icons/ri';
+import { RiFireLine, RiFundsLine, RiCodepenLine, RiTrophyLine } from 'react-icons/ri';
 
 const AboutBox = () => {
     return (
@@ -14,20 +14,20 @@ const AboutBox = () => {
             </div>
 
             <div className="about__box">
-                <RiCupLine className='about__icon' />
+                <RiFundsLine className='about__icon' />
 
                 <div>
-                    <h3 className="about__title">31</h3>
-                    <span className="about__subtitle">Github Repositories</span>
+                    <h3 className="about__title">+30%</h3>
+                    <span className="about__subtitle">Optimización de Procesos   </span>
                 </div>
             </div>
 
             <div className="about__box">
-                <RiGroupLine className='about__icon' />
+                <RiCodepenLine className='about__icon' />
 
                 <div>
-                    <h3 className="about__title">3</h3>
-                    <span className="about__subtitle">Launched Projects</span>
+                    <h3 className="about__title">+5</h3>
+                    <span className="about__subtitle">Proyectos Lanzados</span>
                 </div>
             </div>
 
@@ -35,8 +35,8 @@ const AboutBox = () => {
                 <RiTrophyLine className='about__icon' />
 
                 <div>
-                    <h3 className="about__title">100</h3>
-                    <span className="about__subtitle">Code Quality</span>
+                    <h3 className="about__title">100%</h3>
+                    <span className="about__subtitle">Calidad del código</span>
                 </div>
             </div>
         </div>

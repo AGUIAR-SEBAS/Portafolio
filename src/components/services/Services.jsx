@@ -3,35 +3,44 @@ import './Services.css';
 import Image1 from '../../assets/service-1.svg'
 import Image2 from '../../assets/service-2.svg'
 import Image3 from '../../assets/service-3.svg'
+import Image4 from '../../assets/service-4.svg'
 
 const data = [
     {
         id: 1,
         image: Image1,
-        title: "Responsive design",
+        title: "Full-Stack Development",
         description:
-            "Ensuring that the website/mobile app is responsive across all platforms",
+            "Desarrollo aplicaciones web y móviles end-to-end. Creo desde interfaces interactivas con React hasta la lógica de servidor y bases de datos para una solución integral.",
     },
     {
         id: 2,
         image: Image2,
-        title: "Web Development",
+        title: "Cloud & DevOps",
         description:
-            "Ensuring that that a website meets the correct standards, and also ensuring it's well maintained",
+            "Diseño y escalo infraestructura en la nube (AWS, GCP). Automatizo el ciclo de desarrollo con flujos CI/CD para garantizar entregas rápidas y seguras.",
     },
     {
         id: 3,
         image: Image3,
-        title: "Mobile Development",
+        title: "Database Architecture",
         description:
-            "Ensuring that a mobile app meets the correct standards, and also ensuring it's well maintained",
+            "Diseño y administro bases de datos relacionales escalables (SQL Server, PostgreSQL, etc). Garantizo el máximo rendimiento, integridad y seguridad de los datos.",
     },
+    {
+        id: 4,
+        image: Image4,
+        title: "Business Intelligence & Data Visualization",
+        description:
+            "Convierto datos en decisiones de negocio creando dashboards e informes interactivos con herramientas líderes como Power BI y Looker Studio.",
+    }
+    
 ];
 
 const Services = () => {
     return (
         <section className="services container section" id="services">
-            <h2 className="section__title">Services</h2>
+            <h2 className="section__title">Servicios</h2>
 
             <div className="services__container grid">
                 {data.map(({ id, image, title, description }) => {
