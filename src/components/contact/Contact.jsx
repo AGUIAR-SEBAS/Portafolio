@@ -37,7 +37,7 @@ const Contact = (props) => {
             .then(
                 (result) => {
                     setLoading(false);
-                    toast.success(`Successfully sent email.`);
+                    toast.success(`Correo Enviado Exitosamente.`);
                 },
                 (error) => {
                     setLoading(false);
@@ -65,7 +65,7 @@ const Contact = (props) => {
                             <input
                                 type="text"
                                 className="contact__form-input"
-                                placeholder="Ingressa tu nombre"
+                                placeholder="Ingresa tu nombre"
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </div>
