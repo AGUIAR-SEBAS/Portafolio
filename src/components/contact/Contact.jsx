@@ -15,7 +15,7 @@ const Contact = (props) => {
     const submitHandler = async (e) => {
         e.preventDefault();
         if (!name || !email || !subject || !message) {
-            return toast.error("Please complete the form above");
+            return toast.error("Por favor complete todos los campos." );
         }
 
         setLoading(true);
@@ -49,13 +49,13 @@ const Contact = (props) => {
 
     return (
         <section className="contact container section" id="contact">
-            <h2 className="section__title">Get In Touch</h2>
+            <h2 className="section__title">Contáctame</h2>
 
             <div className="contact__container grid">
                 <div className="contact__info">
-                    <h3 className="contact__title">Let's talk about everything!</h3>
+                    <h3 className="contact__title">Tienes una duda, Escribame</h3>
                     <p className="contact__details">
-                        Don't like forms? Send me an email. 👋
+                        ¿No te gustan los formularios? Envíame un correo electrónico. 👋
                     </p>
                 </div>
 
@@ -65,7 +65,7 @@ const Contact = (props) => {
                             <input
                                 type="text"
                                 className="contact__form-input"
-                                placeholder="Insert your name"
+                                placeholder="Ingressa tu nombre"
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </div>
@@ -74,7 +74,7 @@ const Contact = (props) => {
                             <input
                                 type="email"
                                 className="contact__form-input"
-                                placeholder="Insert your email"
+                                placeholder="Ingresa tu email"
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
@@ -84,7 +84,7 @@ const Contact = (props) => {
                         <input
                             type="text"
                             className="contact__form-input"
-                            placeholder="Insert your subject"
+                            placeholder="Ingresa el asunto"
                             onChange={(e) => setSubject(e.target.value)}
                         />
                     </div>
@@ -96,13 +96,13 @@ const Contact = (props) => {
                             cols="30"
                             rows="10"
                             className="contact__form-input"
-                            placeholder="Write your message"
+                            placeholder="Escribe tu mensaje"
                             onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
                     </div>
 
                     <button type="submit" className="btn">
-                        {loading ? "Sending..." : "Send Message"}
+                        {loading ? "Enviando..." : "Enviar Mensaje"}
                     </button>
                 </form>
                 <ToastContainer position="bottom-right" theme={props.theme} />
