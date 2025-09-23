@@ -13,23 +13,6 @@
 
 ![screenshot](https://github.com/AGUIAR-SEBAS/portafolio-react-sebas/blob/main/src/assets/screenshot.png)
 ```
-## How To Use -->
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/). From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/GregSithole/gregsithole-react-portfolio
-
-# Go into the repository
-$ cd gregsithole-react-portfolio
-
-# Install dependencies
-$ yarn install
-
-# Run the app
-$ yarn start
-```
 
 <!-- ## Credits
 
